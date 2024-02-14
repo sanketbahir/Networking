@@ -1,0 +1,64 @@
+*isp => internet service provider like (vi,jio,airtel,)
+*ip => internet protocal address (public and private)
+ipv4 32 byts 4 bits frist bit tell as  about country, second bit tell us abouut 
+state, third tell us about  isp , forth tell  us about the device
+*type of network => 1) lan 2)man 3)van
+*tyes of ip address 1) public 2) privet 3)static 4)dynamic
+
+*types of protocol
+
+*protocal =>  it means the set of rule
+1)Tcp/ip => tcp and ip works together,tcp sends the data in small pack to the internet 
+
+2)HTTP is an application layer protocol designed to transfer information between networked devices and runs on top of other layers of the network protocol stack
+
+3)FTP => (File Transfer Protocol) is a network protocol for transmitting files between computers over Transmission Control Protocol/Internet Protocol (TCP/IP)
+
+4)SMTP =>Simple Mail Transfer Protocol (SMTP) is a TCP/IP protocol used in sending and receiving e-mail.  
+
+5)POP => stands for Post Office Protocol Version 3. POP3 protocol is used to provide access to the mail inbox that is stored in the email server.
+
+6)
+IMAP (Internet Message Access Protocol) is an email protocol used by email clients to retrieve emails from a mail server. It allows users to access their emails stored on the server, manage folders, and synchronize changes between the server and the client device.
+
+7)ppp => 
+Point-to-Point Protocol (PPP) is a TCP/IP protocol that is used to connect one computer system to another. Computers use PPP to communicate over the telephone network or the Internet
+
+*role of port 
+total number is port 65536
+.port state 1)open 2)close
+.well knwon ports are 0 to 1023
+.registered ports 1024 to 49151 
+.dynamic ports 49152 to 65535
+
+*ports
+Port    IP      Protocol    Description     Direction
+22      -       TCP         SSH             To library
+                -           -               SSH access to Linux running on library. Only enabled for 72 hours after an "Escalation" role service user is created.
+25      -       TCP         SMTP            From library
+                -           -               Connection to external SMTP (Simple Mail Transfer Protocol) server. Required if you have configured any e-mail destinations.
+53      -       TCP & UDP   DNS             From library
+                -           -               DNS (domain name server) lookup.
+80      -       TCP         HTTP            To library
+                -           -               Default port for browser access.
+161     -       UDP         SNMP            To library
+                -           -               Inbound GET requests using SNMP.
+162     -       UDP         SNMP            From library
+                -           -               Outbound SNMP TRAPs.
+123     -       TCP         NTP             From library
+                -           -               Connection from library to an external NTP server.
+443     -       TCP         HTTPS           To library
+                -           -               Default port for browser and web services interfaces.
+7104    -       TCP         HTTP            To library
+                -           -               Alternate port for browser access.
+7102    -       TCP         HTTPS           To library
+                -           -               Alternate port for browser and web services interfaces.
+7104    -       TCP         HTTP            To library
+                -           -               Browser GUI based access to WebLogic console running on the library. Only accessible by an "Escalation" user.
+7105    -       TCP         HTTPS           To library
+                -           -               Browser GUI based access to WebLogic console running on the library. Only accessible by an "Escalation" user.
+Externally Defined      TCP         HTTP & HTTPS    From library
+                -           -               Servers that are configured to receive outbound SCI calls will listen for SCI calls on ports of their choice. Open these port numbers in any firewalls and provide the port numbers configuring the destination on the library.
+Externally Defined      TCP         OKM             From library
+                -           -               If the library is configured to retrieve tape drive encryption keys from an OKM cluster, open the ports used for OKM (see the OKM documentation).
+
